@@ -7,5 +7,20 @@ import "./assets/img/4geeks.ico";
 
 window.onload = function() {
   //write your code here
-  console.log("Hello Rigo from the console!");
+
+  var pronoun = ["the", "our"];
+  var adj = ["great", "big"];
+  var noun = ["jogger", "racoon"];
+
+  for (const i in pronoun) {
+    for (const j in adj) {
+      for (const k in noun) {
+        const pronombre = pronoun[i];
+        const adjetivo = adj[j];
+        const sustantivo = noun[k];
+
+        console.log(pronombre + adjetivo + sustantivo + "");
+      }
+    }
+  }
 };
